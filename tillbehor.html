@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tillbehör</title>
+        <meta name="description" content="asd">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" media="(min-width:768px)" href="css/tablet.css">
+        <link rel="stylesheet" media="(min-width:960px)" href="css/laptop.css">
+        <link rel="stylesheet" media="(min-width:1200px)" href="css/desktop.css">
+        <script>
+        </script>
+    </head>
+    <body>
+            <header class="site-header">
+                <div class="container">
+                    <div class="brand">
+                        <img class="logo" src="images/logo.png" alt="">
+                    </div>
+                    <h1>Luddes Datordelar</h1>
+                    <a class="btn toggle-menu" href="#"><i class="fas fa-bars fa-fw"></i></a>
+                    <nav class="site-navigation">
+                        <a href="index.html">Startsida</a>
+                        <a href="produkter.html">Produkter</a>
+                        <a href="tillbehor.html">Tillbehör</a>
+                        <a href="kontakt.html">Kontakt/Om oss</a>
+                        <a href="kassa.html">Kassa</a>
+                    </nav>
+                </div>
+            </header>
+
+
+            <div class="container">
+                    
+                <article id="post-1" class="post post-1">
+                    <h2 class="h2rubriker">Tillbehör</h2>
+                    <ul class="listing">
+                        <li><a href="datorpaket.html" class="href">
+                          <h2 class="h2produkt">Tillbehör</h2>
+                          <div class="body"><img src="images/tillbehor2.png" alt=""></div></a>
+                        </li>
+                         <li><a href="" class="href">
+                           <h2 class="h2produkt">Sladdar</h2>
+                           <div class="body"><img src="images/sladdar2.jpg" alt=""></div></a>
+                         </li>
+                         <li><a href="" class="href">
+                            <h2 class="h2produkt">Verktyg</h2>
+                            <div class="body"><img src="images/verktyg2.jpg" alt=""></div></a>
+                          </li>
+                      </ul>
+                      
+            </article>
+            </div>
+
+            <main class="site-content" id="to-content">
+                <!-- I main lägger vi vårt innehåll -->
+            </main>
+
+            <footer class="site-footer">
+                <!-- I sidfot lägger vi ex. kontaktuppgifter, extra menyer m.m. -->
+                <div class="container">
+                    <div class="row">                    
+                        <div class="column w50 contact">
+                            <address>
+                                <h3>Luddes Datordelar</h3>
+                                <p class="pfooter">Varbergsvägen 22B<br>
+                                504 30 Borås</p>
+                            </address>
+                            <div class="phone"><i class="fas fa-phone fa-fw"></i><a href="tel:+46123456789">+46 0728 444 044</a></div>
+                            <div class="email"><i class="fas fa-envelope fa-fw"></i><a href="mailto:info@foretaget.se">ludvig.gabaug@gmail.com</a></div>
+                        </div>
+
+                        <div class="column w25 links">
+                            <h3>Snabblänkar</h3>
+                            <ul>
+                                <li><a href="index.html">Startsida</a></li>
+                                <li><a href="tjanster.html">Våra tjänster</a></li>
+                                <li><a href="om-oss.html">Om företaget</a></li>
+                                <li><a href="kontakt.html">Kontakta oss</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column w25 social-links">
+                            <h3>Följ oss</h3>
+                            <ul>
+                                <li><a href="https://facebook.com"><i class="fab fa-facebook fa-fw "></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a href="https://instagram.com"><i class="fab fa-instagram fa-fw"></i><span class="sr-only">Instagram</span></a></li>                        
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Hämta jQuery från CDN https://cdnjs.com/libraries/jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+              // Här kan man lägga javascript
+            (function($){
+                $('.toggle-menu').click( function() {
+                    $('.site-navigation').toggleClass('show');
+                });
+            })(jQuery);
+          
+        </script>
+    </body>
+</html>

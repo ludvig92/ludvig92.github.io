@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <!-- Head har teknisk information för webbläsaren -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <meta name="description" content="Detta är en övningssida.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Använda separata css-filer för olika enheter -->
+        <link rel="stylesheet" media="(min-width:768px)" href="css/tablet.css">
+        <link rel="stylesheet" media="(min-width:960px)" href="css/laptop.css">
+        <link rel="stylesheet" media="(min-width:1200px)" href="css/desktop.css">
+        <script>
+        </script>
+    </head>
+    <body>
+        <!-- Här placeras allt innehåll som webbläsaren ska visa/rendera -->
+        <a href="#to-content"><span class="sr-only">Hoppa till innehållet</span></a>
+        <div id="top-of-page" class="site">
+            
+            <header class="site-header">
+                <div class="container">
+                    <!-- I sidhuvud lägger vi logga och navigering -->
+                    <div class="brand">
+                        <a class="brand-link" href="index.html">
+                            <!-- <h1>Företaget AB</h1> -->
+                            <img class="logo" src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <h1>Luddes Datordelar</h1>
+                    <a class="btn toggle-menu" href="#"><i class="fas fa-bars fa-fw"></i></a>
+                    <nav class="site-navigation">
+                        <a href="index.html">Startsida</a>
+                        <a href="produkter.html">Produkter</a>
+                        <a href="tillbehor.html">Tillbehör</a>
+                        <a href="kontakt.html">Kontakt/Om oss</a>
+                        <a href="kassa.html">Kassa</a>
+                    </nav>
+                </div>
+            </header>
+                <div class="container">
+                    
+                    <article id="post-1" class="post post-1">
+                        <h2 class="h2rubriker">Kontakta oss</h2>
+                    
+
+
+                    <section class="contact section">
+                        <div class="container">
+                             <div class="row">
+                                <div class="column business w40">
+                                <address class="business-address">
+                                    <h3>Luddes Datordelar</h3>
+                                    <p>Varbergsvägen 22B<br>
+                                    504 30 Borås</p>
+                                </address>
+                                <div class="business-phone"><i class="fas fa-phone fa-fw"></i>+46 0728 444 044</div>
+                                <div class="business-email"><i class="fas fa-envelope fa-fw"></i>ludvig.gabaug@gmail.com</div>
+                                <br>
+                                <p>Luddes Datordelar skapades 2020 för att bistå svenska konsumenter med konkurrenskraftiga datordelar till ett mycket slagkraftigt pris.</p>
+                            </div>
+                            <div class="column person w60">
+                                <div class="row">
+                                    <div class="column w33">
+                                    </div>
+                                    <div class="column w67">
+                                        <div class="container">
+                                            <form action="action_page.php">
+                                          
+                                              <label for="fname">Namn</label>
+                                              <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn samt efternamn">
+                                          
+                                              <label for="lname">Epost-adress</label>
+                                              <input type="text" id="lname" name="lastname" placeholder="Din Epost-adress">
+                                          
+                                              <label for="country">Vad gäller ärendet?</label>
+                                              <select id="country" name="country">
+                                                <option value="reklamation">Reklamation</option>
+                                                <option value="Retur">Retur</option>
+                                                <option value="Frågoromleverans">Frågor om leverans</option>
+                                                <option value="övrigt">Övrigt</option>
+                                              </select>
+                                          
+                                              <label for="subject">Beskriv ditt ärende</label>
+                                              <textarea id="subject" name="subject" placeholder="Glöm inte ordernummer vid frågor om reklamation, retur eller leverans." style="height:200px"></textarea>
+                                          
+                                              <input type="submit" value="Skicka">
+                                          
+                                            </form>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <section class="map section">
+                    <div class="container">
+                        <iframe class="google-map" 
+                        src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.0230114836513!2d12.927620216105092!3d57.71606684634325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465aa754ada7299b%3A0xc2b7fafa41ef090f!2sVarbergsv%C3%A4gen%2022B%2C%20504%2030%20Bor%C3%A5s!5e0!3m2!1ssv!2sse!4v1590150612767!5m2!1ssv!2sse"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <!-- I sidfot lägger vi ex. kontaktuppgifter, extra menyer m.m. -->
+                <div class="container">
+                    <div class="row">                    
+                        <div class="column w50 contact">
+                            <address>
+                                <h3>Luddes Datordelar</h3>
+                                <p class="pfooter">Varbergsvägen 22B<br>
+                                504 30 Borås</p>
+                            </address>
+                            <div class="phone"><i class="fas fa-phone fa-fw"></i><a href="tel:+46123456789">+46 0728 444 044</a></div>
+                            <div class="email"><i class="fas fa-envelope fa-fw"></i><a href="mailto:info@foretaget.se">ludvig.gabaug@gmail.com</a></div>
+                        </div>
+
+                        <div class="column w25 links">
+                            <h3>Snabblänkar</h3>
+                            <ul>
+                                <li><a href="index.html">Startsida</a></li>
+                                <li><a href="tjanster.html">Våra tjänster</a></li>
+                                <li><a href="om-oss.html">Om företaget</a></li>
+                                <li><a href="kontakt.html">Kontakta oss</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column w25 social-links">
+                            <h3>Följ oss</h3>
+                            <ul>
+                                <li><a href="https://facebook.com"><i class="fab fa-facebook fa-fw "></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a href="https://instagram.com"><i class="fab fa-instagram fa-fw"></i><span class="sr-only">Instagram</span></a></li>                        
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Hämta jQuery från CDN https://cdnjs.com/libraries/jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+            (function($){
+                $('.toggle-menu').click( function() {
+                    $('.site-navigation').toggleClass('show');
+                });
+            })(jQuery);
+          
+        </script>
+    </body>
+</html>

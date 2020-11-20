@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kassa</title>
+        <meta name="description" content="Detta är en övningssida.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Använda separata css-filer för olika enheter -->
+        <link rel="stylesheet" media="(min-width:768px)" href="css/tablet.css">
+        <link rel="stylesheet" media="(min-width:960px)" href="css/laptop.css">
+        <link rel="stylesheet" media="(min-width:1200px)" href="css/desktop.css">
+    </head>
+    <body>
+            <header class="site-header">
+                <div class="container">
+                    <!-- I sidhuvud lägger vi logga och navigering -->
+                    <div class="brand">
+                        <img class="logo" src="images/logo.png" alt="">
+                    </div>
+                    <h1>Luddes Datordelar</h1>
+                    <a class="btn toggle-menu" href="#"><i class="fas fa-bars fa-fw"></i></a>
+                    <nav class="site-navigation">
+                      <a href="index.html">Startsida</a>
+                      <a href="produkter.html">Produkter</a>
+                      <a href="tillbehor.html">Tillbehör</a>
+                      <a href="kontakt.html">Kontakt/Om oss</a>
+                      <a href="kassa.html">Kassa</a>
+                    </nav>
+                </div>
+            </header>
+            <!-- Vanlig placering på navigering beroende på design -->
+            <!-- 
+            <nav class="site-navigation">
+                <a href="index.html">Startsida</a>
+                <a href="tjanster.html">Våra tjänster</a>
+                <a href="om-oss.html">Om företaget</a>
+                <a href="kontakt.html">Kontakta oss</a>
+            </nav> 
+            -->
+            <div class="row">
+                <div class="col-75">
+                  <div class="container">
+                    <article id="post-1" class="post post-1">
+                      <h2 class="h2rubriker">Kassa <i class="fas fa-cash-register"></i></h2>
+                    <form action="/tacksida.html">
+              
+                      <div class="row">
+                        <div class="col-50">
+                          <h3>Faktureringsadress</h3>
+                          <BR></BR>
+                          <label for="fname"></i> Fullständigt Namn</label>
+                          <input type="textcheckout" id="fname" name="firstname" placeholder="Johan Johansson">
+                          <label for="email"></i> E-post-adress</label>
+                          <input type="textcheckout" id="email" name="email" placeholder="johan@johansson.se">
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Adress</label>
+                          <input type="textcheckout" id="adr" name="address" placeholder="Storgatan 1">
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="state">Postnummer</label>
+                              <input type="textcheckout" id="state" name="state" placeholder="123 45">
+                            </div>
+                            <div class="col-50">
+                              <label for="zip">Stad</label>
+                              <input type="textcheckout" id="zip" name="zip" placeholder="Storstaden">
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-50">
+                          <h3>Betalningsinformation</h3>
+                          <br>
+                          <label for="fname"></label>
+
+                          <label for="cname">Kortinnehavarens Namn</label>
+                          <input type="textcheckout" id="cname" name="cardname" placeholder="Johan Johansson">
+                          <label for="ccnum">Kortnummer</label>
+                          <input type="textcheckout" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="expyear">Utgångs-år</label>
+                              <input type="textcheckout" id="expyear" name="expyear" placeholder="2025">
+                            </div>
+                            <div class="col-50">
+                              <label for="cvv">Utgångs-månad</label>
+                              <input type="textcheckout" id="cvv" name="cvv" placeholder="">
+                            </div>
+                            <div class="col-50">
+                              <label for="cvv">CVV</label>
+                              <input type="textcheckout" id="cvv" name="cvv" placeholder="XXX">
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div>
+                      <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Leveransadress är samma som faktureringsadress
+                      </label>
+                      <input type="submit" value="Slutför Köp" class="btn-checkout">
+                     </article> 
+                    </form>
+                  </div>
+                </div>
+              
+                <div class="col-25">
+                  <div class="container">
+                    <article class="post-1">
+                      <h2 class="h2rubriker">Produkter <i class="fa fa-shopping-cart"></i></h2>
+                      <br>
+                      <span class="price" style="color:black">
+                      </span>
+                    </h4>
+                    <p class="p-checkout"><a href="#">Datorpaket 1.0</a> <span class="price">7 995:-</span></p>
+                    <hr>
+                    <p>Summa <span class="price" style="color:black"><b>7 995:-</b></span></p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+            <footer class="site-footer">
+                <!-- I sidfot lägger vi ex. kontaktuppgifter, extra menyer m.m. -->
+                <div class="container">
+                    <div class="row">                    
+                        <div class="column w50 contact">
+                            <address>
+                                <h3>Luddes Datordelar</h3>
+                                <p class="pfooter">Varbergsvägen 22B<br>
+                                504 30 Borås</p>
+                            </address>
+                            <div class="phone"><i class="fas fa-phone fa-fw"></i><a href="tel:+46123456789">+46 0728 444 044</a></div>
+                            <div class="email"><i class="fas fa-envelope fa-fw"></i><a href="mailto:info@foretaget.se">ludvig.gabaug@gmail.com</a></div>
+                        </div>
+
+                        <div class="column w25 links">
+                            <h3>Snabblänkar</h3>
+                            <ul>
+                                <li><a href="index.html">Startsida</a></li>
+                                <li><a href="tjanster.html">Våra tjänster</a></li>
+                                <li><a href="om-oss.html">Om företaget</a></li>
+                                <li><a href="kontakt.html">Kontakta oss</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column w25 social-links">
+                            <h3>Följ oss</h3>
+                            <ul>
+                                <li><a href="https://facebook.com"><i class="fab fa-facebook fa-fw "></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a href="https://instagram.com"><i class="fab fa-instagram fa-fw"></i><span class="sr-only">Instagram</span></a></li>                        
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- Hämta jQuery från CDN https://cdnjs.com/libraries/jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+              // Här kan man lägga javascript
+            (function($){
+                $('.toggle-menu').click( function() {
+                    $('.site-navigation').toggleClass('show');
+                });
+            })(jQuery);
+          
+        </script>
+    </body>
+</html>
